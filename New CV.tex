@@ -1,0 +1,274 @@
+%-------------------------
+% Resume in Latex
+% Author : Tejas Khairnar
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.2cm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2 
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{1mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1.2mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.1mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{1mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-0.5mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-4.5mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-3.1mm}\textbf{ #1} & {#2} & \hspace{3mm}\footnotesize{#3}
+\vspace{0mm}\\
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Sakshi Agrawal} % Your Name
+\newcommand{\course}{Integrated M.Sc. in Economics} % Your Course
+\newcommand{\roll}{20HS20061} % Your Roll No.
+\newcommand{\phone}{8529161117} % Your Phone Number
+\newcommand{\emaila}{sakshiagrawal1651@gmail.com} %Email 1
+\newcommand{\github}{swabhi-iitkgp} %Github
+\newcommand{\website}{https://example.com} %Website
+\newcommand{\linkedin}{sakshi-agrawal-1856a4213/} %linkedin
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\vspace{-6.5mm}
+\begin{center}
+    \small{ \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare \hspace{0.2mm} linkedin.com/in/sakshi-agrawal-1856a4213/} | \href{mailto:\emaila}{\faSend \hspace{0.2mm} \emaila} | \faPhone \hspace{0.2mm} +91-\phone }
+\end{center}
+\vspace{-3mm}
+
+%-----------EDUCATION-----------------
+
+\vspace{-2.5mm}
+% \section{Education}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Indian Institute of Technology Guwahati}{Guwahati, India}
+%       {Bachelor of Technology in Mathematics and Computing ;  GPA: 8.10}{July. 2015 -- July. 2019 (Expected)}
+%     \resumeSubheading
+%       {Burdwan Model School}{Burdwan, W.B}
+%       {Central Board of Secondary Education (Class XII);  Percentage: 96.60}{March. 2015}
+%   \resumeSubHeadingListEnd\vspace{-3mm}
+\section{Education}
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+% \renewcommand{\arraystretch}{1.1} % Default value: 1
+\small{\begin{tabularx}
+{\dimexpr\textwidth-3mm\relax}{|c|C|c|}
+  \hline
+  \textbf{Degree/Certificate } & \textbf{Institute/Board} & \textbf{CGPA/Percentage}\\
+  \hline
+  Integrated M.Sc. & Indian Institute of Technology, Kharagpur & 8.64\\
+  
+  \hline
+  Senior Secondary & CBSE Board & 88.6\% \\
+  \hline
+  Secondary & CBSE Board & 10.00 \\
+  \hline
+\end{tabularx}}
+\vspace{-2mm}
+
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProject
+{Venture Capital Experience Project} %Project Name
+{Quollab} %Project Name, Location Name
+{February 2021 - March 2021} %Event Dates
+{\href{https://quollab.com/}{Link to Quollab website.}} %Website
+\resumeItemListStart
+\item[$\bullet$] Headed a team of 5 members and participated in the due diligence process.
+\item[$\bullet$] Did strong sector research of the EdTech sector and led virtual investments.
+
+\resumeItemListEnd
+
+\resumeProject
+{Bluetooth-enabled Automatic Plant Watering System}
+{Prof.  Vikrant Racherla,  IIT Kharagpur} %Project Name, Location Name
+{March 2021 - June 2021} %Event Dates
+{\href{https://youtu.be/vSBbuox9BX4}{Link to the project video.}} 
+\resumeItemListStart
+\item[$\bullet$] Created a Bluetooth-enabled automatic plant watering system useful for maintaining small household gardens.
+\item[$\bullet$] Used soil moisture sensor to control water flow through Arduino.
+\item[$\bullet$] Used a Bluetooth module to enable control through a mobile application.
+\resumeItemListEnd
+
+\resumeProject
+{Case Study 
+}
+{ShARE, IIT Kharagpur} %Project Name, Location Name
+{November 2021 - December 2021} %Event Dates
+{\href{https://drive.google.com/drive/folders/1T-zYbgaR85XATaBYmwf45kFPz2gli375?usp=share_link}{Link to the presentation.}} 
+\resumeItemListStart
+\item[$\bullet$] Analysed and presented a case study on whether TATA should buy Air India and did SWOT analysis for the same.
+\item[$\bullet$] Worked on a case study that was examined to show how technical and vocational education may be developed in India to help the lower classes.
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-5.5mm}
+
+
+\section{Technical Skills}
+\vspace{0.2mm}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{0.5\textwidth} p{0.5\textwidth}}
+
+\hspace{-3.1mm}{\textbf{ Programming languages:} C, Python, STATA}  \\  
+\hspace{-3.1mm}{\textbf{ Libraries:} Sklearn, Numpy, Pandas, Matplotlib} \\
+\hspace{-3.1mm}{\textbf{ Miscellaneous skills:} MATLAB, MS Excel, MS PowerPoint} 
+\end{tabular*}}
+
+\vspace{-2.5mm}
+\section{Relevant Coursework}
+\vspace{0.2mm}
+
+
+\small{\begin{tabular*}{\textwidth}[t]{p{\textwidth}}
+\hspace{-3.1mm}\textbf{ Finance: }{Trading Basics, Varsity by Zerodha, Bloomberg Market Concepts, Econometric Analysis, Financial Management, Financial Analysis, Corporate Valuation and Restructuring}\\
+\hspace{-3.1mm}\textbf{ Miscellaneous Courses: }{Operations Research, Programming and Data Structures, Probability and Statistics, Statistics for Economics}
+\end{tabular*}}
+
+\vspace{-2.5mm}
+
+\section{Position of Responsibilty}
+\vspace{0.2mm}
+
+\textbf{Associate Manager | Entrepreneurship Cell, IIT Kharagpur}\hspace {65mm}{May 2021 - April 2022}
+\resumeItemListStart
+\item[$\bullet$]Part of the largest student-run, non-profit organisation, started in 2006, which works with the aim of fostering
+innovation and entrepreneurship in India. I handled the Corporate and Media Relations portfolio which keeps me in
+dialogue with top CXOs in India and attained corporate and media partnerships for the cell.
+\item[$\bullet$] Single-handedly organised the Bhopal chapter of Entrepreneurship Awareness Drive 2021 by partnering with the
+top 2 local universities and inviting speakers from prominent organisations like Co-founder, Signzy and Founder,
+SayTrees.
+\item[$\bullet$] Led a team of 15 Campus Ambassadors to publicise the event in Bhopal and nearby cities.
+\item[$\bullet$] Attained sponsorship worth INR 6,00,000 from companies like Cisco, ITC Limited etc. and associated with media
+bodies like Business Standard, The Indian Express, Amar Ujala and YourStory.
+\item[$\bullet$] Collaborated with international organisations to launch outdoor advertising in UAE and US.
+\resumeItemListEnd
+
+\hspace{-6.1mm}{\textbf{General Secretary, Social and Cultural | SN/IG Hall of Residence}}\hspace{55mm}{May 2022 - Present}
+\resumeItemListStart
+\item[$\bullet$] Managed an annual social and cultural activities budget of INR 6.43 Lakhs at SN/IG Hall of Residence, IIT Kharagpur.
+\item[$\bullet$] Coordinated with fellow General Secretaries to manage a team of 100+participants in Interhall Illumination.
+\item[$\bullet$] Ensured practice and participation of 30+ boarders in Interhall Rangoli Competition.
+\item[$\bullet$] Managed participation of 100+ boarders in 18 inter-hall competitions in General Championship 2022-2023.
+\item[$\bullet$] Organized events on occasions of Independence Day, Republic Day and Saraswati Pooja.
+\resumeItemListEnd
+
+
+\vspace{-2.5mm}
+
+\section{Achievements}
+\vspace{0.2mm}
+
+\resumeItemListStart
+\item[$\bullet$] Competed with 10 Lakh students all over India and qualified JEE Advanced.
+\item[$\bullet$] Secured the position of Departmental Rank 2 in 4th semester.
+\item[$\bullet$] Secured the 2nd position in interhall Choreography and Rangoli competions.
+\resumeItemListEnd
+
+
+\vspace{-2.5mm}
+
+\vspace{0mm}
+
+%-------------------------------------------
+\end{document}
